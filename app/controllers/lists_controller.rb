@@ -1,11 +1,16 @@
 class ListsController < ApplicationController
 
 	def index
-		render :index
+		@lists = List.all
+
 	end
 
 	def show
 
 	end 
+
+	def new
+		
+	end
 
 end
