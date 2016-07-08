@@ -2,7 +2,7 @@
 
 <ul> 
 	<li><a href="/specific_list">Specific List</a></li>
-	<% @lists.each do |list| %>
-	<li> <%= list %></li>
+	<% @lists.each_with_index do |list, index| %>
+	<li><%= link_to list, "/list/#{index}" %></li>
 	<% end %> 
 </ul>
